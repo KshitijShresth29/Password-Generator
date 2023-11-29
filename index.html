@@ -8,7 +8,7 @@
 </head>
 <body>
     <div class="container">
-        <h1>generate a <br><span>random password</span> </h1>
+        <h1><br><span>Password Generator</span> </h1>
         <div class="display">
             <input type="text" id="password" placeholder="password">
             <img src="copy.png">
@@ -17,5 +17,22 @@
             <img src="generate.png">Generate Password
         </button>
     </div>
+    <script>
+        const passwordBox = document.getElementById("psssword");    
+        const length = 12;
+
+        const UpperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        const LowerCase = "abcdefghijklmnopqrstuvwxyz";
+        const number = "0123456789";
+        const symbol = "!@#$%^&*/{}[]-_=+~"
+function createPassword(){
+    let password = "";
+    password += UpperCase[Math.floor(Math.random()* upperCase.length)];
+    password += LowerCase[Math.floor(Math.random()* LowerCase.length)];
+    password += number[Math.floor(Math.random()* number.length)];
+    password += symbol[Math.floor(Math.random()* symbol.length)];
+
+}
+    </script>
 </body>
 </html>
