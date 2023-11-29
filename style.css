@@ -50,7 +50,7 @@ body{
 .container button{
     border: 0;
     outline: 0;
-    background: #019f55;
+    background: rgba(241, 183, 35, 0.304);
     color: #fff;
     font-size: 22px;
     font-weight: 300;
